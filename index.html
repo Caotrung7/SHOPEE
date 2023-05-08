@@ -7,50 +7,66 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SHOPEE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <div class="app">
         <div class="header">
             <div class="grid">
-                <nav class="header-navbar">
-                    <ul class="header-navbar-list">
-                        <li class="header-navbar-item header-navbar-separate">Kênh Người Bán</li>
-                        <li class="header-navbar-item header-navbar-separate">Trở thành người bán shopee</li>
-                        <li class="header-navbar-item header-navbar-separate">Tải ứng dụng</li>
-                        <li class="header-navbar-item">
-                            <span class="header-navbar-no-pointer">Kết nối</span>
-                            <a href="" class="header-navbar-icon">
-                                <i class="header-fa-icon fa-brands fa-facebook"></i>
+                <nav class="h-navbar">
+                    <ul class="h-navbar-list">
+                        <li class="h-navbar-item h-navbar-spr">Kênh Người Bán</li>
+                        <li class="h-navbar-item h-navbar-spr">Trở thành người bán shopee</li>
+
+                        <!--HEADER QR CODE-->
+                        <li class="h-navbar-item h-show-QR h-navbar-spr">
+                            Tải ứng dụng
+                            <div class="h-QR">
+                                <img src="./img/QR%20code.png" alt="QR code" class="h-QR-img">
+                                <div class="h-QR-apps">
+                                    <a href="" class="h-QR-link">
+                                        <img src="./img/google%20play.png" alt="google play" class="h-QR-store">
+                                    </a>
+                                    <a href="" class="h-QR-link">
+                                        <img src="./img/app%20store.png" alt="app store" class="h-QR-store">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!--HEADER QR CODE-->
+
+                        <li class="h-navbar-item">
+                            <span class="h-no-pointer">Kết nối</span>
+                            <a href="" class="h-navbar-icon">
+                                <i class="h-fa-icon fa-brands fa-facebook"></i>
                             </a>
-                            <a href="" class="header-navbar-icon">
-                                <i class="header-fa-icon fa-brands fa-instagram"></i>
+                            <a href="" class="h-navbar-icon">
+                                <i class="h-fa-icon fa-brands fa-instagram"></i>
                             </a>
                         </li>
                     </ul>
 
-                    <ul class="header-navbar-list">
-                        <li class="header-navbar-item header-navbar-separate">
-                            <a href="" class="header-item-link">
-                                <i class="header-fa-icon fa-sharp fa-regular fa-bell"></i>Thông báo
+                    <ul class="h-navbar-list">
+                        <li class="h-navbar-item h-navbar-spr">
+                            <a href="" class="h-item-link">
+                                <i class="h-fa-icon fa-sharp fa-regular fa-bell"></i>Thông báo
                             </a>
                         </li>
-                        <li class="header-navbar-item header-navbar-separate">
-                            <a href="" class="header-item-link">
-                                <i class="header-fa-icon fa-regular fa-circle-question"></i>Hỗ trợ
+                        <li class="h-navbar-item h-navbar-spr">
+                            <a href="" class="h-item-link">
+                                <i class="h-fa-icon fa-regular fa-circle-question"></i>Hỗ trợ
                             </a>
                         </li>
-                        <li class="header-navbar-item header-navbar-separate">
-                            <a href="" class="header-navbar-icon">
-                                <i class="header-fa-icon fa-solid fa-globe"></i>
+                        <li class="h-navbar-item h-navbar-spr">
+                            <a href="" class="h-navbar-icon">
+                                <i class="h-fa-icon fa-solid fa-globe"></i>
                             </a>Tiếng Việt
                         </li>
-                        <li class="header-navbar-item header-navbar-separate header-item-strong">Đăng Ký</li>
-                        <li class="header-navbar-item header-item-strong">Đăng Nhập</li>
+                        <li class="h-navbar-item h-navbar-spr h-item-strong">Đăng Ký</li>
+                        <li class="h-navbar-item h-item-strong">Đăng Nhập</li>
                     </ul>
                 </nav>
             </div>

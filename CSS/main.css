@@ -1,0 +1,125 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0, #f94d30, #fa5130);
+}
+
+.h-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h-navbar-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 4px;
+}
+
+.h-navbar-item {
+    margin: 0 8px;
+    position: relative;
+    min-height: 26px;
+}
+
+.h-navbar-item,
+.h-item-link {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.h-navbar-item,
+.h-item-link,
+.h-fa-icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+.h-navbar-item:hover,
+.h-item-link:hover,
+.h-navbar-icon:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.h-item-strong {
+    font-weight: 500;
+}
+
+.h-navbar-spr::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 2px solid #f86c5c;
+    height: 1.4rem;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.h-navbar-icon {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.h-fa-icon {
+    font-size: 1.6rem;
+    margin: 0 4px;
+}
+
+.h-no-pointer {
+    cursor: text;
+    color: var(--white-color);
+}
+
+/*HEADER QR CODE*/
+.h-QR {
+    position: absolute;
+    background-color: var(--white-color);
+    width: 184px;
+    top: 100%;
+    left: 0;
+    margin: 10px 0 0;
+    padding: 2px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in .3s;
+}
+
+.h-QR::before {
+    position: absolute;
+    left: 0;
+    top: -16px;
+    width: 100%;
+    height: 24px;
+    content: "";
+    display: block;
+}
+
+.h-show-QR:hover .h-QR {
+    display: block;
+}
+
+.h-QR-img {
+    width: 100%;
+}
+
+.h-QR-apps {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.h-QR-link:nth-child(1) {
+    margin-left: 11px;
+}
+
+.h-QR-link:nth-child(2) {
+    margin-right: 11px;
+}
+
+.h-QR-store {
+    height: 16px;
+}
+
