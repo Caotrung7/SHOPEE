@@ -51,7 +51,7 @@
     content: "";
     display: block;
     position: absolute;
-    border-left: 2px solid #f86c5c;
+    border-left: 2px solid #ed9891;
     height: 1.4rem;
     right: -8px;
     top: 50%;
@@ -123,3 +123,134 @@
     height: 16px;
 }
 
+/*HEADER NOTIFICATION*/
+.h-notify {
+    position: absolute;
+    top: 118%;
+    right: 0;
+    width: 404px;
+    border: 1px solid #d3d3d3;
+    background-color: var(--white-color);
+    cursor: text;
+    transform-origin: calc(100% - 20px) top;
+    animation: hNotifyGrowth ease-in 0.2s;
+    will-change: oppacity, transform;
+    display: none;
+}
+
+.h-notify::before {
+    content: "";
+    border-style: solid;
+    border-width: 16px 18px;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 4px;
+    top: -30px;
+}
+
+.h-notify::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top: -16px;
+    right: 0;
+    display: block;
+}
+
+.h-notify-show:hover .h-notify {
+    display: block;
+}
+
+@keyframes hNotifyGrowth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+.h-notify-h {
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.h-notify-h h3 {
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+    user-select: none;
+}
+
+
+.h-notify-list {
+    padding-left: 0;
+
+}
+
+.h-notify-item {
+    display: flex;
+    padding: 12px;
+}
+
+.h-notify-item:hover {
+    background-color: #e1dede;
+}
+
+.h-notify-item-new {
+    background-color: rgba(251, 100, 69, 0.09);
+}
+
+.h-notify-link {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+}
+
+.h-notify-img {
+    width: 48px;
+    object-fit: contain;
+
+
+}
+
+.h-notify-ìno {
+    margin-left: 12px;
+
+}
+
+.h-notify-name {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.h-notify-des {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #333333;
+    margin-top: 4px;
+}
+
+.h-notify-f {
+    display: flex;
+}
+
+.h-notify-f-btn {
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 0;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+}
