@@ -121,18 +121,116 @@
                     </div>
 
                     <div class="h-search">
+                        <div class="h-search-input-wrap">
+                            <input type="text" class="h-search-input" placeholder="AT+ Shopping Mall">
+                            <!-- Search history-->
+                            <div class="h-search-history">
+                                <h3 class="h-search-history-heading">Search History</h3>
+                                <ul class="h-search-history-list">
+                                    <li class="h-search-history-item">
+                                        <a href="">Kem Chống Nắng Sun Treatment UV SPF</a>
+                                    </li>
+                                    <li class="h-search-history-item">
+                                        <a href="">Xà Phòng Cám Gạo Thái Lan Giúp Giảm Mụn, Trắng Da Mặt - Body</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="h-search-select">
+                            <span class="h-search-select-label">In this shop</span>
+                            <i class="h-search-select-icon fa-solid fa-chevron-down"></i>
 
+                            <ul class="h-search-option">
+                                <li class="h-search-item">
+                                    <span>In this shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                                <li class="h-search-item">
+                                    <span>In shopee</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="h-search-btn">
+                            <i class="h-search-btn-icon fa-brands fa-searchengin"></i>
+                        </button>
                     </div>
 
+                    <!--Cart layout-->
                     <div class="h-cart">
-                        <i class="h-cart-icon fa-solid fa-cart-shopping"></i>
+                        <div class="h-cart-wrap">
+                            <i class="h-cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="h-cart-notice">3</span>
+                            <!--NO CART : add h-cart-list_empty-->
+                            <div class="h-cart-list">
+                                <img src="img/no%20cart.png" alt="" class="h-cart_empty-img">
+                                <span class="h-cart_no-cart-message">
+                                No products yet
+                                </span>
+                                <h4 class="h-cart-heading">Products added</h4>
+                                <ul class="h-product-list">
+                                <!--Cart item-->
+                                    <li class="h-product-item">
+                                        <img src="https://hangthaichinhhang.net/upload/hinhthem/xaphongsuagaojamricemilksoap04-4672.jpg" alt="" class="h-product-img">
+                                        <div class="h-product_item-info">
+                                            <div class="h-product_item-head">
+                                                <h5 class="h-product_item-name">Xà Phòng Cám Gạo Thái Lan</h5>
+                                               <div class="h-product-price-wrap">
+                                                   <span class="h-product_item-price">18.000đ</span>
+                                                   <span class="h-product_item-multiply">x</span>
+                                                   <span class="h-product_item-qty">2</span>
+                                               </div>
+                                            </div>
+                                            <div class="h-product_item-body">
+                                                <span class="h-product_item-des">Giúp Giảm Mụn, Trắng Da Mặt - Body</span>
+                                                <span class="h-product_item-remove">Delete</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="h-product-item">
+                                        <img src="https://cf.shopee.vn/file/c2b0a356365d9388d3cb0afe4fbea99e" alt="" class="h-product-img">
+                                        <div class="h-product_item-info">
+                                            <div class="h-product_item-head">
+                                                <h5 class="h-product_item-name">Kem Chống Nắng Sun Treatment</h5>
+                                                <div class="h-product-price-wrap">
+                                                    <span class="h-product_item-price">39.000đ</span>
+                                                    <span class="h-product_item-multiply">x</span>
+                                                    <span class="h-product_item-qty">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="h-product_item-body">
+                                                <span class="h-product_item-des">Dưỡng Da Sáng Hồng Rạng Rỡ</span>
+                                                <span class="h-product_item-remove">Delete</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="h-product-item">
+                                        <img src="https://cf.shopee.vn/file/8de53f89e63ecbf173ee695bf652238c" alt="" class="h-product-img">
+                                        <div class="h-product_item-info">
+                                            <div class="h-product_item-head">
+                                                <h5 class="h-product_item-name">BB Cream Moisturing Lameila</h5>
+                                                <div class="h-product-price-wrap">
+                                                    <span class="h-product_item-price">42.000đ</span>
+                                                    <span class="h-product_item-multiply">x</span>
+                                                    <span class="h-product_item-qty">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="h-product_item-body">
+                                                <span class="h-product_item-des">Kem Nền Trang Điểm Che Khuyết Điểm</span>
+                                                <span class="h-product_item-remove">Delete</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <a href="#" class="h-cart-view btn btn-primary">See list carts</a>
+
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
             </div>
-
-
-
 
         </div>
 
@@ -150,101 +248,101 @@
 
 <!--        <div class="modal-body">-->
 <!--        &lt;!&ndash;BEGIN&#45;&#45;Sign Up FORM&ndash;&gt;-->
-<!--&lt;!&ndash;            <div class="auth-form">&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="auth-form_container">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <div class="auth-form-h">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <h3 class="auth-form_heading">Sign Up</h3>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <span class="auth-form_switch-btn">Log in</span>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <div class="auth-form_form">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <div class="auth-form_group">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <input type="text" class="auth-from_input" placeholder="Email address">&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <div class="auth-form_group">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <input type="password" class="auth-from_input" placeholder="Your password">&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <div class="auth-form_group">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <input type="password" class="auth-from_input" placeholder="Enter the password again">&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <div class="auth-form_aside">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <p class="auth-form_policy">By signing up, you agree to Shopee's&ndash;&gt;-->
-<!--&lt;!&ndash;                            <a href="" class="auth-form_policy-link">Terms of Service</a> &&ndash;&gt;-->
-<!--&lt;!&ndash;                            <a href="" class="auth-form_policy-link">Privacy Policy</a>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </p>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--            <div class="auth-form">-->
+<!--                <div class="auth-form_container">-->
+<!--                    <div class="auth-form-h">-->
+<!--                        <h3 class="auth-form_heading">Sign Up</h3>-->
+<!--                        <span class="auth-form_switch-btn">Log in</span>-->
+<!--                    </div>-->
+<!--                    <div class="auth-form_form">-->
+<!--                        <div class="auth-form_group">-->
+<!--                            <input type="text" class="auth-from_input" placeholder="Email address">-->
+<!--                        </div>-->
+<!--                        <div class="auth-form_group">-->
+<!--                            <input type="password" class="auth-from_input" placeholder="Your password">-->
+<!--                        </div>-->
+<!--                        <div class="auth-form_group">-->
+<!--                            <input type="password" class="auth-from_input" placeholder="Enter the password again">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="auth-form_aside">-->
+<!--                        <p class="auth-form_policy">By signing up, you agree to Shopee's-->
+<!--                            <a href="" class="auth-form_policy-link">Terms of Service</a> &-->
+<!--                            <a href="" class="auth-form_policy-link">Privacy Policy</a>-->
+<!--                        </p>-->
+<!--                    </div>-->
 
-<!--&lt;!&ndash;                    <div class="auth-form_controls">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <button class="btn btn-hover auth-btn_back">Back</button>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <button class="btn btn-primary">Sign Up</button>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--                    <div class="auth-form_controls">-->
+<!--                        <button class="btn btn-hover auth-btn_back">Back</button>-->
+<!--                        <button class="btn btn-primary">Sign Up</button>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-<!--&lt;!&ndash;                <div class="auth-form_socials">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <a href="" class="social-facebook btn btn-size_s btn-icon">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <i class="social-icon fa-brands fa-facebook"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <span class="social-tittle">&ndash;&gt;-->
-<!--&lt;!&ndash;                            Facebook&ndash;&gt;-->
-<!--&lt;!&ndash;                        </span>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <a href="" class="social-google btn btn-size_s btn-icon">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <i class="social-icon fa-brands fa-google"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <span class="social-tittle">&ndash;&gt;-->
-<!--&lt;!&ndash;                            Google&ndash;&gt;-->
-<!--&lt;!&ndash;                        </span>&ndash;&gt;-->
+<!--                <div class="auth-form_socials">-->
+<!--                    <a href="" class="social-facebook btn btn-size_s btn-icon">-->
+<!--                        <i class="social-icon fa-brands fa-facebook"></i>-->
+<!--                        <span class="social-tittle">-->
+<!--                            Facebook-->
+<!--                        </span>-->
+<!--                    </a>-->
+<!--                    <a href="" class="social-google btn btn-size_s btn-icon">-->
+<!--                        <i class="social-icon fa-brands fa-google"></i>-->
+<!--                        <span class="social-tittle">-->
+<!--                            Google-->
+<!--                        </span>-->
 
-<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
 <!--            &lt;!&ndash;END&#45;&#45;Sign Up FORM&ndash;&gt;-->
 
 <!--            &lt;!&ndash;BEGIN&#45;&#45;LOG IN FORM&ndash;&gt;-->
-<!--&lt;!&ndash;            <div class="auth-form">&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="auth-form_container">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <div class="auth-form-h">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <h3 class="auth-form_heading">Log in</h3>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <span class="auth-form_switch-btn">Sign Up</span>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <div class="auth-form_form">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <div class="auth-form_group">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <input type="text" class="auth-from_input" placeholder="Email address">&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <div class="auth-form_group">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <input type="password" class="auth-from_input" placeholder="Your password">&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <div class="auth-form_aside">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <div class="auth-form_Help">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <a href="" class="auth-form_Help-Link">Forgot password</a>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <span class="auth-form_help-spr"></span>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <a href="" class="auth-form_Help-Link">Need help?</a>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--            <div class="auth-form">-->
+<!--                <div class="auth-form_container">-->
+<!--                    <div class="auth-form-h">-->
+<!--                        <h3 class="auth-form_heading">Log in</h3>-->
+<!--                        <span class="auth-form_switch-btn">Sign Up</span>-->
+<!--                    </div>-->
+<!--                    <div class="auth-form_form">-->
+<!--                        <div class="auth-form_group">-->
+<!--                            <input type="text" class="auth-from_input" placeholder="Email address">-->
+<!--                        </div>-->
+<!--                        <div class="auth-form_group">-->
+<!--                            <input type="password" class="auth-from_input" placeholder="Your password">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="auth-form_aside">-->
+<!--                        <div class="auth-form_Help">-->
+<!--                            <a href="" class="auth-form_Help-Link">Forgot password</a>-->
+<!--                            <span class="auth-form_help-spr"></span>-->
+<!--                            <a href="" class="auth-form_Help-Link">Need help?</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
-<!--&lt;!&ndash;                    <div class="auth-form_controls">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <button class="btn btn-hover auth-btn_back">Back</button>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <button class="btn btn-primary">LOG IN</button>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--                    <div class="auth-form_controls">-->
+<!--                        <button class="btn btn-hover auth-btn_back">Back</button>-->
+<!--                        <button class="btn btn-primary">LOG IN</button>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-<!--&lt;!&ndash;                <div class="auth-form_socials">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <a href="" class="social-facebook btn btn-size_s btn-icon">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <i class="social-icon fa-brands fa-facebook"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <span class="social-tittle">&ndash;&gt;-->
-<!--&lt;!&ndash;                            Facebook&ndash;&gt;-->
-<!--&lt;!&ndash;                        </span>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <a href="" class="social-google btn btn-size_s btn-icon">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <i class="social-icon fa-brands fa-google"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <span class="social-tittle">&ndash;&gt;-->
-<!--&lt;!&ndash;                            Google&ndash;&gt;-->
-<!--&lt;!&ndash;                        </span>&ndash;&gt;-->
+<!--                <div class="auth-form_socials">-->
+<!--                    <a href="" class="social-facebook btn btn-size_s btn-icon">-->
+<!--                        <i class="social-icon fa-brands fa-facebook"></i>-->
+<!--                        <span class="social-tittle">-->
+<!--                            Facebook-->
+<!--                        </span>-->
+<!--                    </a>-->
+<!--                    <a href="" class="social-google btn btn-size_s btn-icon">-->
+<!--                        <i class="social-icon fa-brands fa-google"></i>-->
+<!--                        <span class="social-tittle">-->
+<!--                            Google-->
+<!--                        </span>-->
 
-<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;            &lt;!&ndash;END&#45;&#45;LOG IN FORM&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;END&#45;&#45;LOG IN FORM&ndash;&gt;-->
+<!--        </div>-->
 <!--    </div>-->
 </body>
 </html>
