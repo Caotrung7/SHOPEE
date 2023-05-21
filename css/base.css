@@ -29,6 +29,7 @@ html {
     box-sizing: border-box;
 }
 
+/*RESPONSIVE*/
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -42,7 +43,22 @@ html {
 .grid_row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
+
+/*TEST*/
+
+.grid_column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.667%;
+}
+
+.grid_column-10 {
+    width: 83.333%;
+}
+
 
 /*ANIMATION*/
 
@@ -93,7 +109,7 @@ html {
 
 /*BUTTON STYLE*/
 .btn {
-    min-width: 124px;
+    min-width: 90px;
     height: 34px;
     text-decoration: none;
     border-radius: 2px;
@@ -103,7 +119,8 @@ html {
     cursor: pointer;
     outline: none;
     color: var(--text-color);
-    display: flex;
+    background-color: var(--white-color);
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     line-height: 1.6rem;
@@ -130,6 +147,4 @@ html {
     cursor: default;
     background-color: #c3c3c3;
 }
-
-
 

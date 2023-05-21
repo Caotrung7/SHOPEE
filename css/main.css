@@ -10,6 +10,7 @@
 }
 
 .h-navbar-list {
+    display: flex;
     list-style: none;
     padding-left: 0;
     margin: 4px 0 0 0;
@@ -33,7 +34,7 @@
 .h-navbar-item,
 .h-item-link,
 .h-fa-icon {
-    display: inline-flex;
+    display: flex;
     align-items: center;
 }
 
@@ -42,6 +43,104 @@
 .h-navbar-icon:hover {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.7);
+}
+
+.h-navbar-icon:nth-child(2) {
+    margin-left: 3px;
+}
+
+/*HEADER USER INFO*/
+.h-navbar-user{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.h-navbar_user-avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.h-navbar_user-name{
+    margin-left: 4px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 8px;
+    color: #eddede;
+}
+
+.h-navbar_user-menu {
+    position: absolute;
+    z-index: 1;
+    padding-left: 0;
+    margin-top: 4px;
+    top: 100%;
+    right: 0;
+    width: 180px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    list-style: none;
+    box-shadow: 0 1px 2px #e0e0e0;
+    display: none;
+}
+
+.h-navbar_user-menu-spr {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.h-navbar-user:hover .h-navbar_user-menu{
+    display: block;
+}
+
+.h-navbar_user-menu::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 55%;
+    height: 16px;
+}
+
+.h-navbar_user-menu-item a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 6px 16px;
+    margin-top: 8px;
+}
+
+.h-navbar_user-log-out a {
+    color: var(--primary-color);
+}
+
+.h-navbar_user-menu-item a:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.h-navbar_user-menu-item a:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.h-navbar_user-menu-item a:hover {
+    background-color: #e9dfdf;
+}
+
+.h-navbar_user-menu::after {
+    content: "";
+    border-style: solid;
+    border-width: 16px 20px;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 20px;
+    top: -24px;
 }
 
 .h-item-strong {
@@ -77,6 +176,7 @@
 /*HEADER QR CODE*/
 .h-QR {
     position: absolute;
+    z-index: 1;
     background-color: var(--white-color);
     width: 184px;
     top: 100%;
@@ -128,13 +228,15 @@
 /*HEADER NOTIFICATION*/
 .h-notify {
     position: absolute;
+    z-index: 1;
     top: 118%;
     right: 0;
     width: 404px;
     border: 1px solid #d3d3d3;
+    border-radius: 2px;
     background-color: var(--white-color);
     cursor: text;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 32px) top;
     animation: hNotifyGrowth ease-in 0.2s;
     will-change: oppacity, transform;
     display: none;
@@ -403,6 +505,11 @@
     width: 162px;
 }
 
+.h-logo-link {
+    text-decoration: none;
+    color: transparent;
+}
+
 .h-logo-img {
     width: 146px;
 }
@@ -622,6 +729,7 @@
 
 .h-search-option {
     position: absolute;
+    top: calc(100% + 1px);
     right: 0;
     width: 140px;
     list-style: none;
@@ -756,5 +864,74 @@
     display: block;
 }
 
+/*CONTAINER*/
+
+.container {
+    background-color: #F5F5F5;
+}
+
+.container-content {
+    padding-top: 24px;
+}
+
+.category {
+    background-color: var(--white-color);
+    border-radius: 2px;
+}
+
+.category-heading {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: 8px 16px;
+    margin-top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.category-heading-icon {
+    font-size: 1.4rem;
+    margin-right: 4px;
+}
+
+.category-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.category-item-active .category-item-link {
+    color: var(--primary-color);
+}
+
+.category-item-active .category-item-link::before {
+    position: absolute;
+    content: "";
+    border: 4px solid;
+    border-color: transparent transparent transparent var(--primary-color);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 22px;
+}
+
+.category-item-link {
+    position: relative;
+    right: 0;
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 8px 32px;
+    transition: right linear 0.1s;
+}
+
+.category-item-link:hover {
+    right: -4px;
+    color: var(--primary-color);
+}
+
+/*HOME FILTER*/
+
+.home-filter {
+    display: flex;
+    background: rgba(0, 0, 0, 0.05);
+}
 
 
