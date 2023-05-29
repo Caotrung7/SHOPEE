@@ -1234,3 +1234,7 @@
     position: relative;
     top: 4px;
 }
+
+.home-product-pagination {
+    margin: 48px 0 32px 0;
+}

@@ -6,7 +6,8 @@ dotted ButtonText}fieldset{padding:.35em .75em
 
 
 :root {
-    --primary-color: #fb6445;
+    --primary-color: #ea4f4f;
+    --hover-primary-color: #EF8383FF;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
@@ -210,4 +211,44 @@ html {
 .select-input-item-link:hover {
     color: var(--primary-color);
     right: -4px;
+}
+
+/*PAGINATION*/
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-item {
+    margin: 0 4px;
+}
+
+.pagination-item-icon {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.pagination-item-link {
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.6rem;
+    --height: 30px;
+    line-height: var(--height);
+    height: var(--height);
+    width: 36px;
+    color: #939393;
+    display: block;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.pagination-item-active .pagination-item-link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item-active .pagination-item-link:hover {
+    background-color: var(--hover-primary-color);
 }
