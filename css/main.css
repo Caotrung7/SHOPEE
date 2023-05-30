@@ -1238,3 +1238,38 @@
 .home-product-pagination {
     margin: 48px 0 32px 0;
 }
+
+/*FOOTER*/
+.footer {
+    border-top: 4px solid var(--primary-color);
+    padding-top: 16px;
+}
+
+.footer-heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.footer-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-item-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 300;
+    padding: 6px 0;
+    display: block;
+}
+
+.footer-item-link:hover {
+    color: var(--primary-color);
+}
+
+.footer-payment_logo-img {
+
+}
