@@ -561,7 +561,7 @@
 }
 
 .h-cart-list {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: calc(100% + 6px);
     width: 400px;
@@ -835,7 +835,7 @@
 
 .h-search-input:focus ~ .h-search-history{
     display: block;
-    z-index: 1;
+    z-index: 2;
 }
 
 .h-search-history {
