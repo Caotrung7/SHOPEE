@@ -1263,13 +1263,106 @@
     color: #666;
     font-weight: 300;
     padding: 6px 0;
-    display: block;
+    display: flex;
+    align-items: center;
 }
 
 .footer-item-link:hover {
     color: var(--primary-color);
 }
 
-.footer-payment_logo-img {
+/*FOOTER PAYMENT LOGO*/
+
+.footer-payment {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 0 16px;
+}
+
+.footer-payment-list {
+    display: flex;
+    margin: 0 8px 12px 0;
+    padding: 2px;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.footer-payment-link {
+    display: flex;
+    text-decoration: none;
+    cursor: default;
+    box-sizing: border-box;
+}
+
+.footer-payment-img {
+    width: 50px;
+}
+
+.footer-social-icon {
+    margin: -1px 8px 0 0;
+    font-size: 1.6rem;
+}
+
+.footer-download {
+    display: flex;
+}
+
+.footer-download-pr {
 
 }
+
+.footer-download_qr-link {
+    text-decoration: none;
+    color: transparent;
+}
+
+.footer-download_qr-img {
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    /*object-fit: contain;*/
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footer-download-app {
+    flex: 1;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-download_link {
+   margin-top: 4px;
+}
+
+.footer-download_app-img {
+    padding: 4px;
+    width: 80px;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footer-bottom {
+    border-top: 1px solid #e1e1e1;
+    padding: 4px 0;
+    margin-top: 24px;
+    background-color: #f5f5f5;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
