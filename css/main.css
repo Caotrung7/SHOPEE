@@ -1,7 +1,56 @@
 
 .header {
-    height: 120px;
+    height: var(--h-height);
     background-image: linear-gradient(0, #f94d30, #fa5130);
+}
+
+/*HEARDER SORT BAR*/
+.header-sort-bar {
+    list-style: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: var(--h-sort-bar-height);
+    background-color: var(--white-color);
+    margin: 0;
+    padding-left: 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    display: none;
+}
+
+.header-sort-item {
+    flex: 1;
+}
+
+.header-sort-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    display: block;
+    height: 100%;
+    line-height: var(--h-sort-bar-height);
+    text-align: center;
+    position: relative;
+    font-weight: 500;
+}
+
+.header-sort-link::after {
+    content: "";
+    position: absolute;
+    border-left: 1px solid #e5e5e5;
+    left: 0;
+    top: 50%;
+    height: 60%;
+    transform: translateY(-50%);
+}
+
+.header-sort_item-active .header-sort-link {
+    color: var(--primary-color);
+}
+
+.header-sort-item:first-child .header-sort-link::after {
+    display: none;
 }
 
 .h-navbar {
@@ -596,7 +645,7 @@
 .h-product-list {
     padding-left: 0;
     list-style: none;
-    height: 56vh;
+    max-height: 56vh;
     overflow-y: auto;
 }
 
@@ -676,6 +725,10 @@
 .h-product_item-remove {
     font-size: 1.2rem;
     color: var(--text-color);
+}
+
+.h-product_item-trash {
+    display: none;
 }
 
 .h-product_item-remove:hover {
