@@ -544,6 +544,15 @@
 
 /*HEADER WITH SEARCH*/
 
+.h-mobile-search {
+    padding: 0 12px;
+}
+
+.h-mobile_search-icon {
+    font-size: 2.6rem;
+    color: var(--white-color);
+}
+
 .h-with-search {
     display: flex;
     height: var(--h-with-search-height);
@@ -558,6 +567,8 @@
 .h-logo-link {
     text-decoration: none;
     color: transparent;
+    display: block;
+    line-height: 0;
 }
 
 .h-logo-img {
@@ -571,6 +582,10 @@
     background-color: var(--white-color);
     display: flex;
     align-items: center;
+}
+
+.h-search-checkbox:checked ~ .h-search {
+    display: flex;
 }
 
 .h-cart {
