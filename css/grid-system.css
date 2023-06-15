@@ -11,7 +11,7 @@
 }
 
 .row {
-    display: block;
+    display: flex;
     flex-wrap: wrap;
     margin-left: -4px;
     margin-right: -4px;
@@ -296,6 +296,7 @@
         display: none;
     }
     .l-1,
+    .l-2,
     .l-2-4,
     .l-3,
     .l-4,

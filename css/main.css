@@ -1,4 +1,8 @@
 
+.app {
+    overflow: hidden;
+}
+
 .header {
     height: var(--h-height);
     background-image: linear-gradient(0, #f94d30, #fa5130);
@@ -1305,6 +1309,7 @@
 
 .home-product-pagination {
     margin: 48px 0 32px 0;
+    padding-left: 0;
 }
 
 /*FOOTER*/
