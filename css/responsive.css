@@ -37,6 +37,13 @@
         margin-top: calc(var(--h-height) + var(--h-sort-bar-height));
     }
 
+    .container-content {
+        padding-top: 8px;
+    }
+
+    .mobile-category {
+        display: block;
+    }
 }
 
 /*TABLET*/
@@ -94,6 +101,14 @@
 
     .container-content {
         margin: 0 4px;
+    }
+
+    .h-mobile-search {
+        display: block;
+    }
+
+    .h-logo-img {
+        width: 110px;
     }
 
     @keyframes mobileSearchSideIn {

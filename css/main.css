@@ -550,6 +550,7 @@
 
 .h-mobile-search {
     padding: 0 12px;
+    display: none;
 }
 
 .h-mobile_search-icon {
@@ -602,6 +603,7 @@
     display: inline-block;
     cursor: pointer;
     padding: 0 12px;
+    -webkit-tap-highlight-color: transparent; /*BO THAY DOI MAU KHI TICK VAO THE a*/
 }
 
 .h-cart-wrap:hover .h-cart-list {
@@ -1035,8 +1037,62 @@
     color: var(--primary-color);
 }
 
-/*HOME FILTER*/
 
+/*MOBILE CATEGORY*/
+.mobile-category {
+    display: none;
+}
+
+.mobile-category-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mobile-category-list::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-category-item {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.mobile-category-item:nth-of-type(3n + 1) .mobile-category-link {
+    background-color: darkgreen;
+}
+
+.mobile-category-item:nth-of-type(3n + 2) .mobile-category-link {
+    background-color: blueviolet;
+}
+
+.mobile-category-item:nth-of-type(3n + 3) .mobile-category-link {
+    background-color: darkblue;
+}
+
+.mobile-category-link {
+    --line-height: 2rem;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: center;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    line-height: var(--line-height);
+    height: calc(var(--line-height)*2);
+    width: 110px;
+    overflow: hidden;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    padding: 0 6px;
+}
+
+/*HOME FILTER*/
 .home-filter {
     display: flex;
     align-items: center;
